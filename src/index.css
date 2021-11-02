@@ -1,4 +1,4 @@
-*,
+/* *,
 *::after,
 *::before {
   margin: 0;
@@ -106,4 +106,147 @@
 
 .pad-8 {
   background-color: blanchedalmond;
+} */
+/* * {
+  margin: 0;
+  box-sizing: border-box;
+} */
+
+/* https://www.codegrepper.com/code-examples/javascript/react+make+component+full+screen */
+.App {
+  height: 100%;
+  position: absolute;
+  /* left: 0; */
+  width: 100%;
+  overflow: hidden;
+}
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(1000, 0.1%);
+  grid-template-rows: repeat(566, 0.176%);
+}
+
+.header {
+  grid-column-start: 382;
+  grid-column-end: 687;
+  grid-row-start: 17;
+  grid-row-end: 61;
+  background-color: blue;
+  text-align: center;
+}
+.design-pad-h1 {
+  margin: auto auto auto auto;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-size: 2em;
+}
+
+.button-div {
+  grid-column-start: 887;
+  grid-column-end: 974;
+  grid-row-start: 17;
+  grid-row-end: 61;
+  background-color: red;
+}
+#edit-button {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 0;
+  background-color: red;
+}
+#buttonspan {
+  width: 100%;
+  height: 100%;
+}
+
+.left-side {
+  /* background-color: #0000ff; */
+}
+.design-numbers {
+  grid-column-start: 38;
+  grid-column-end: 197;
+  grid-row-start: 160;
+  grid-row-end: 465;
+  /* background-color: #9b97ff; */
+  margin: 10px;
+
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.numbers-themselves {
+  /* margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px; */
+
+  /* display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 25% 25% 25% 25%; */
+  align-content: space-around;
+}
+.number {
+  width: 50px;
+  height: 25px;
+  /* color: red; */
+  margin: auto;
+  padding: auto;
+}
+
+.center {
+  grid-column-start: 239;
+  grid-column-end: 857;
+  grid-row-start: 87;
+  grid-row-end: 526;
+  /* background-color: #aa2222; */
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+}
+
+.pad {
+  border-radius: 25px;
+}
+
+.top-left {
+  /* grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 8; */
+  background-color: beige;
+}
+.top-right {
+  /* grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2; */
+  background-color: beige;
+}
+.bottom-left {
+  /* grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3; */
+  background-color: beige;
+}
+.bottom-right {
+  /* grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3; */
+  background-color: beige;
 }
